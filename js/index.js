@@ -59,7 +59,7 @@ async function generateMovies(link){
 
                 movieDiv.addEventListener("click",(event)=>{
                     let target = event.target.parentNode;
-                    window.location = "film.html";
+                    window.location = `film.html?id=${movie.imdbID}`;
                 })
             }
         }
