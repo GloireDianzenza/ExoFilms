@@ -6,7 +6,7 @@ searchBtn.addEventListener("click",()=>{
     else if(isSearching)return;
     const API_KEY = "b17f4ca5";
     const url = `https://www.omdbapi.com/?apikey=${API_KEY}&s=${value}`;
-    console.log(url);
+    generateMovies(url);
 })
 
 /**
@@ -14,5 +14,9 @@ searchBtn.addEventListener("click",()=>{
  * @param {string} link 
  */
 async function generateMovies(link){
-
+    const response = await fetch(link);
+    const json = response.json();
+    let results;
+    await json.then(data=>results = data.Search);
+    console.log(results);
 }
