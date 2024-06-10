@@ -1,4 +1,4 @@
-section.main{
+article.main{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,4 +64,8 @@ section.main{
     .input-field input{
         font-size: 50px;
     }
+}
+
+.movie img{
+    max-width: 300px;
 }

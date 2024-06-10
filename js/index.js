@@ -33,6 +33,21 @@ async function generateMovies(link){
             if(movie || movie !== undefined){
                 const movieDiv = document.createElement("div");
                 movieDiv.classList.add("movie");
+
+                let image = document.createElement("img");
+                image.src = movie.Poster;
+                movieDiv.appendChild(image);
+
+                let title = document.createElement("h2");
+                title.classList.add('title');
+                title.innerHTML = movie.Title;
+                movieDiv.appendChild(title);
+                
+                let year = document.createElement("h3");
+                year.classList.add('year');
+                year.innerHTML = movie.Year;
+                movieDiv.appendChild(year);
+
                 movies.appendChild(movieDiv);
             }
         }
