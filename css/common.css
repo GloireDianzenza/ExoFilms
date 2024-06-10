@@ -5,6 +5,11 @@
     font-family: sans-serif;
     text-decoration: none;
     list-style: none;
+    transition: all 0.2s ease;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 button,input[type=submit],input[type=button]{
@@ -18,6 +23,13 @@ body{
 }
 
 section.main{
+    max-width: 100%;
+    min-height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+}
+
+:root{
+    --main-yellow:rgb(254,204,0);
+    --main-grey:rgb(43,43,43);
 }

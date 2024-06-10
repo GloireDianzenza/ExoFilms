@@ -1,0 +1,43 @@
+footer{
+    background-color: var(--main-grey);
+    color: white !important;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 150px;
+    text-align: center;
+}
+
+.social-links,.mobile-links{
+    margin-top: 20px
+}
+
+.social-links a{
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 8px;
+    font-size: 20px;
+    color: white !important;
+}
+.mobile-links a{
+    cursor: pointer;
+    font-size: 40px;
+    color: rgba(255,255,255,0.4) !important;
+}
+.mobile-links a:hover{
+    cursor: pointer;
+    font-size: 40px;
+    color: white !important;
+}
+
+.country-list{
+    display: flex;
+    gap: 20px;
+}
+
+.country-list li a{
+    font-size: 10px;
+    color: white !important;
+}

@@ -1,0 +1,14 @@
+header{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--main-yellow);
+    left: 0;
+    top: 0;
+}
+
+header a h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: black !important;
+}
