@@ -55,6 +55,12 @@ async function generateMovies(link){
                 movieDiv.appendChild(id);
 
                 movies.appendChild(movieDiv);
+
+
+                movieDiv.addEventListener("click",(event)=>{
+                    let target = event.target.parentNode;
+                    window.location = "film.html";
+                })
             }
         }
 
