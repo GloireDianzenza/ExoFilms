@@ -80,3 +80,8 @@ article.main{
         font-size: 0.8em;
     }
 }
+
+.movie:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
