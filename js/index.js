@@ -14,17 +14,31 @@ searchBtn.addEventListener("click",()=>{
  * @param {string} link 
  */
 async function generateMovies(link){
-    const response = await fetch(link);
-    const json = response.json();
-    let results;
-    await json.then(data=>results = data.Search);
+    movies.innerHTML = "";
+    try{
+        const response = await fetch(link);
+        const json = response.json();
+        let results;
+        await json.then(data=>results = data.Search);
 
-    let index = 0;
-    for(let movie of results){
-        if(movie.Type != "movie"){
-            delete results[index];
+        let index = 0;
+        for(let movie of results){
+            if(movie.Type != "movie"){
+                delete results[index];
+            }
+            index++;
         }
-        index++;
+
+        for(let movie of results){
+            if(movie || movie !== undefined){
+                const movieDiv = document.createElement("div");
+                movieDiv.classList.add("movie");
+                movies.appendChild(movieDiv);
+            }
+        }
+
+    }catch(error){
+        console.log("error",error);
     }
-    console.log(results);
+    //Poster,title,year
 }

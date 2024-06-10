@@ -37,11 +37,18 @@ section.main{
 
 .movies{
     max-width: 100%;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.movies .movie{
+    max-width: 30%;
+    width: 100%;
+    text-align: center;
 }
 
 @media screen and (max-width:860px){
