@@ -4,3 +4,33 @@ section.main{
     align-items: center;
     gap: 50px;
 }
+
+.input-field{
+    max-width: 50%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #aaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-field button{
+    font-size: 25px;
+    padding: 10px;
+    border: none;outline: none;
+    border-radius: 0 10px 10px 0;
+    background-color: var(--main-yellow);
+    width: 10%;
+}
+
+.input-field input{
+    width: 90%;
+    font-size: 25px;
+    height: 100% !important;
+    border: none;outline: none;
+    border-radius: 10px 0 0 10px;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 5px;
+}
