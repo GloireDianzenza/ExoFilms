@@ -1,0 +1,20 @@
+img{
+    max-width: 50%;
+}
+
+.main{
+    padding-left: 20px;
+}
+
+article div:first-child{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+article div:first-child > div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+}
