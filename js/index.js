@@ -18,5 +18,13 @@ async function generateMovies(link){
     const json = response.json();
     let results;
     await json.then(data=>results = data.Search);
+
+    let index = 0;
+    for(let movie of results){
+        if(movie.Type != "movie"){
+            delete results[index];
+        }
+        index++;
+    }
     console.log(results);
 }
