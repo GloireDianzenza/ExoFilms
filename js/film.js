@@ -12,6 +12,15 @@ getMovie(id).then(data=>{
     const movieDiv = document.querySelector("article.main");
     movieDiv.querySelector('img').src = movie.Poster;
     movieDiv.querySelector('.title').innerHTML = movie.Title;
+    movieDiv.querySelector('.year').innerHTML = movie.Year;
+    movieDiv.querySelector('.rated').innerHTML = movie.Rated;
+    movieDiv.querySelector('.runtime').innerHTML = movie.Runtime;
+    movieDiv.querySelector('.genre').innerHTML = movie.Genre;
+    movieDiv.querySelector('.director').innerHTML = movie.Director;
+    movieDiv.querySelector('.actors').innerHTML = movie.Actors;
+    movieDiv.querySelector('.plot').innerHTML = movie.Plot;
+    movieDiv.querySelector('.country').innerHTML = movie.Country;
+    movieDiv.querySelector('.rating').innerHTML = movie.imdbRating;
 
 });
 
