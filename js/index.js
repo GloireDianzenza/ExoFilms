@@ -47,6 +47,12 @@ async function generateMovies(link){
                 year.classList.add('year');
                 year.innerHTML = movie.Year;
                 movieDiv.appendChild(year);
+               
+                let id = document.createElement("p");
+                id.classList.add('imdbid');
+                id.innerHTML = movie.imdbID;
+                id.style.display = "none";
+                movieDiv.appendChild(id);
 
                 movies.appendChild(movieDiv);
             }

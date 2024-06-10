@@ -43,12 +43,17 @@ article.main{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-bottom: 20px;
 }
 
 .movies .movie{
     max-width: 30%;
     width: 100%;
     text-align: center;
+    border: none;
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width:860px){
@@ -67,5 +72,11 @@ article.main{
 }
 
 .movie img{
-    max-width: 300px;
+    max-width: 100%;
+}
+
+@media screen and (max-width:440px) {
+    h2{
+        font-size: 0.8em;
+    }
 }
