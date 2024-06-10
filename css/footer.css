@@ -9,6 +9,14 @@ footer{
     text-align: center;
 }
 
+@media screen and (max-width:860px) {
+    footer{
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0;
+    }
+}
+
 .social-links,.mobile-links{
     margin-top: 20px
 }
