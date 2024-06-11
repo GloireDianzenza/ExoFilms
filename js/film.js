@@ -1,5 +1,5 @@
-const queryString = window.location.search;
-const paremeters = new URLSearchParams(queryString);
+const queryString = new URL(window.location);
+const paremeters = queryString.searchParams;
 const id = paremeters.get("id");
 if(id == null || id.trim() === "")window.location = "index.html";
 const API_KEY = "b17f4ca5";
