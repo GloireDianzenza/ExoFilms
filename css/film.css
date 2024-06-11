@@ -43,3 +43,7 @@ article > div:nth-child(2){
         max-width: 90%;
     }
 }
+
+.info1 > h2{
+    font-size: 2.5em;
+}
