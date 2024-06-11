@@ -27,7 +27,7 @@ getMovie(id).then(data=>{
 /**
  * 
  * @param {string} imdbID 
- * @returns {Object}
+ * @returns {Object | void}
  */
 async function getMovie(imdbID){
     try{
