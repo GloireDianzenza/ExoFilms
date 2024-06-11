@@ -59,6 +59,7 @@ async function generateMovies(link){
 
 
                 movieDiv.addEventListener("click",()=>{
+                    localStorage.setItem("id",movie.imdbID);
                     window.location = `film.html?id=${movie.imdbID}`;
                 })
             }
