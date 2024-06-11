@@ -14,6 +14,7 @@ searchBtn.addEventListener("click",()=>{
  * @param {string} link 
  */
 async function generateMovies(link){
+    isSearching = true;
     movies.innerHTML = "";
     try{
         const response = await fetch(link);
@@ -67,5 +68,6 @@ async function generateMovies(link){
     }catch(error){
         console.log("error",error);
     }
+    isSearching = true;
     //Poster,title,year
 }
