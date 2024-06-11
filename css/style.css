@@ -76,7 +76,7 @@ article.main{
 }
 
 @media screen and (max-width:440px) {
-    h2{
+    h2:not(article > h2){
         font-size: 0.8em;
     }
 }

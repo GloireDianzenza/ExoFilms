@@ -36,7 +36,7 @@ article.main{
     --main-grey:rgb(43,43,43);
 }
 
-.main h1{
+.main > h2{
     text-align: center;
     font-size: 40px;
 }
