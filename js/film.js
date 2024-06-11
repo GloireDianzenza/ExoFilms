@@ -1,10 +1,7 @@
 const queryString = new URL(window.location.origin+"/film.html?id="+localStorage.getItem("id"));
 const paremeters = queryString.searchParams;
 const id = paremeters.get("id");
-console.log(id);
-if(id == null || id.trim() === "" || localStorage.getItem("id") === null){
-    console.log(window.location);
-}
+if(id == null || id.trim() === "" || localStorage.getItem("id") === null)window.location = "index.html";
 const API_KEY = "b17f4ca5";
 let movie;
 getMovie(id).then(data=>{
