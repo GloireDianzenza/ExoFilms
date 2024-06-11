@@ -68,6 +68,6 @@ async function generateMovies(link){
     }catch(error){
         console.log("error",error);
     }
-    isSearching = true;
+    isSearching = false;
     //Poster,title,year
 }
