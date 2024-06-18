@@ -1,4 +1,5 @@
 const queryString = new URL(window.location.origin+"/film.html?id="+localStorage.getItem("id"));
+//Récupérer l'id dans le LocalStorage, sinon revenir à index
 const paremeters = queryString.searchParams;
 const id = paremeters.get("id");
 if(id == null || id.trim() === "" || localStorage.getItem("id") === null)window.location = "index.html";
@@ -21,6 +22,7 @@ getMovie(id).then(data=>{
     movieDiv.querySelector('.plot').innerHTML = movie.Plot;
     movieDiv.querySelector('.country').innerHTML = movie.Country;
     movieDiv.querySelector('.rating').innerHTML = movie.imdbRating;
+    //Insérer le plus de données dans le HTML
 
 });
 
@@ -30,6 +32,7 @@ getMovie(id).then(data=>{
  * @returns {Object | void}
  */
 async function getMovie(imdbID){
+    //Récupérer le film mais en détails et un seul film
     try{
         const url = `https://www.omdbapi.com/?apikey=${API_KEY}&i=${imdbID}`;
         const response = await fetch(url);

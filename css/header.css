@@ -1,8 +1,10 @@
 header{
+    /* Entete qui reste colle en haut de la page */
     position: fixed;
     width: 100%;
     padding: 10px;
-    background-color: var(--main-yellow);
+    background-color: var(--main-yellow); 
+    /* La variable est stockée dans common.css */
     left: 0;
     top: 0;
 }
